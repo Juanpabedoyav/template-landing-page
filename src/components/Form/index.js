@@ -19,7 +19,12 @@ export const Form = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <input onChange={handleChange} type='email' placeholder='Correo' />
+        <input
+          onChange={handleChange}
+          type='email'
+          placeholder='Correo'
+          required={true}
+        />
         <button type='submit'>Submit</button>
       </form>
     </>
