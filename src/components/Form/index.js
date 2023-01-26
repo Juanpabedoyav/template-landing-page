@@ -1,19 +1,21 @@
 import { useRef, useState } from 'react'
-
+import { saveData } from '../../helpers/saveData'
+import { addDoc, collection } from 'firebase/firestore'
+import { db } from '../../firebase/config'
 export const Form = () => {
-  const [mail, setMail] = useState('')
+  const [mail, setMail] = useState({})
   const debounceRef = useRef()
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log('lo enviastes')
-  }
   const handleChange = (e) => {
     if (debounceRef.current) clearTimeout(debounceRef.current)
 
     debounceRef.current = setTimeout(() => {
-      setMail(e.target.value)
+      setMail({ email: e.target.value })
     }, 900)
+  }
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    await saveData(mail)
   }
 
   return (
