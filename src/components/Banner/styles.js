@@ -5,7 +5,7 @@ export const BannerSC = styled.section`
   margin: 2rem auto;
   .banner {
     border-radius: 0.5rem;
-    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255, 0.7);
     width: 100%;
     height: 100%;
     object-fit: cover;
