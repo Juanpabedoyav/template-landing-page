@@ -12,7 +12,9 @@ const banners = [banner1, banner2]
 export const Banner = () => {
   return (
     <>
-      <p style={{ color: 'white' }}>Lo Deberías Saber</p>
+      <p style={{ color: 'white' }}>
+        <span className={'title'}>Lo Deberías Saber</span>
+      </p>
 
       <p style={{ color: 'white' }}>Exclusivo en: </p>
       {banners.map((banner, i) => (
@@ -25,7 +27,7 @@ export const Banner = () => {
         </BannerSC>
       ))}
       <p style={{ color: 'white' }}>
-        Con la ayuda de <span>Lo Deberías Saber </span>
+        Con la ayuda de <span className={'title'}>Lo Deberías Saber </span>
         aprenderas A:
       </p>
       <MiddleSC>
@@ -35,9 +37,9 @@ export const Banner = () => {
           <Image src={money} priority={''} alt='money' />
         </div>
         <div className={'others'}>
-          <p>Crecer</p>
-          <p>Conectar</p>
-          <p>Volver el dinero en amigo</p>
+          <span>Crecer</span>
+          <span>Conectar</span>
+          <span>Volver el dinero en amigo</span>
         </div>
       </MiddleSC>
     </>

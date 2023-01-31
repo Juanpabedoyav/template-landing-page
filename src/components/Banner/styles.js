@@ -38,7 +38,7 @@ export const MiddleSC = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    p {
+    span {
       margin-top: 0.2rem;
       width: 120px;
       text-align: center;

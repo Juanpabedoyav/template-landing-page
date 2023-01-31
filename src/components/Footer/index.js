@@ -7,12 +7,22 @@ import Link from 'next/link'
 export const Footer = () => {
   return (
     <>
-      <p style={{ color: 'white' }}>Siguenos en :</p>
+      <p style={{ color: 'white' }}>
+        Siguenos en :
+        <span className={'title title-footer'}>@lodeberiasaber</span>
+      </p>
+
       <FooterSC>
-        <Link href={'https://www.facebook.com/lodeberiasaber'}>
+        <Link
+          href={'https://www.facebook.com/lodeberiasaber'}
+          target={'_blank'}
+        >
           <Image src={facebook} priority={''} alt='Facebook @lodeberiasaber' />
         </Link>
-        <Link href={'https://www.instagram.com/lodeberiasaber/'}>
+        <Link
+          href={'https://www.instagram.com/lodeberiasaber/'}
+          target={'_blank'}
+        >
           <Image
             src={instagram}
             priority={''}
