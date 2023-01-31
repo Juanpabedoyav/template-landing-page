@@ -17,3 +17,36 @@ export const ImageBannerSC = styled(Image)`
   height: 100%;
   object-fit: cover;
 `
+export const MiddleSC = styled.section`
+  background: #ffbd2b;
+  padding: 0.5rem 0;
+  opacity: 1;
+  .imgs {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .others {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    p {
+      margin-top: 0.2rem;
+      width: 120px;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+  /* 
+  justify-content: space-evenly;
+  align-items: center; */
+`
