@@ -7,8 +7,7 @@ import engrane from '../../../public/assets/middle/2.png'
 import money from '../../../public/assets/middle/3.png'
 import { BannerSC, ImageBannerSC, MiddleSC } from './styles'
 
-const banners = [banner1]
-const banners1 = [banner3]
+const banners = [banner1, banner2]
 
 export const Banner = () => {
   return (
@@ -41,15 +40,6 @@ export const Banner = () => {
           <p>Volver el dinero en amigo</p>
         </div>
       </MiddleSC>
-      {banners1.map((banner, i) => (
-        <BannerSC key={i}>
-          <ImageBannerSC
-            src={banner}
-            alt='Nuevo video todos los viernes'
-            priority={''}
-          />
-        </BannerSC>
-      ))}
     </>
   )
 }
