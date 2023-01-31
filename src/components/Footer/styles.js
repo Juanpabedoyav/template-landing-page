@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const FooterSC = styled.footer`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 5rem;
   padding: 1.5rem;
   img {
     width: 50px;

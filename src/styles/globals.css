@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+                
 * {
   padding: 0;
   margin: 0;
@@ -7,8 +9,29 @@ html
 body{
   display: flex;
   background-color: rgb(0, 0, 0);
+  font-family: 'Satoshi', sans-serif;
+
 }
 a{
   text-decoration: none;
   color: white;
+}
+p{
+  text-align: center;
+  margin: 3rem auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 80%;
+}
+.title{
+  background: #ffbd2b;
+  color: black;
+  padding: 0.5rem;
+  margin: 0 0.5rem 0 0.5rem;
+  font-weight: bold;
+}
+.title-footer{
+  display: block;
+  width: 50%;
+  margin: 0.5rem auto;
 }

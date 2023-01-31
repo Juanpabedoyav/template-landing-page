@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import { saveData } from '../../helpers/saveData'
 import { addDoc, collection } from 'firebase/firestore'
 import { db } from '../../firebase/config'
+import { FormSC } from './style'
 export const Form = () => {
   const [mail, setMail] = useState({})
   const debounceRef = useRef()
@@ -10,7 +11,7 @@ export const Form = () => {
     if (debounceRef.current) clearTimeout(debounceRef.current)
 
     debounceRef.current = setTimeout(() => {
-      setMail({ email: e.target.value })
+      setMail({ name: e.target.value, email: e.target.value })
     }, 900)
   }
   const handleSubmit = async (e) => {
@@ -20,15 +21,27 @@ export const Form = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <input
-          onChange={handleChange}
-          type='email'
-          placeholder='Correo'
-          required={true}
-        />
-        <button type='submit'>Submit</button>
-      </form>
+      <FormSC>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <input
+              onChange={handleChange}
+              type='text'
+              placeholder='Nombre'
+              required={true}
+            />
+          </div>
+          <div>
+            <input
+              onChange={handleChange}
+              type='email'
+              placeholder='Correo'
+              required={true}
+            />
+          </div>
+          <button type='submit'>Submit</button>
+        </form>
+      </FormSC>
     </>
   )
 }
