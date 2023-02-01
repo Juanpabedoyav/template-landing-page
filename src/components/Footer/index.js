@@ -30,6 +30,11 @@ export const Footer = () => {
           />
         </Link>
       </FooterSC>
+      <div className='copyrigth'>
+        <span style={{ background: '#ffbd2b', padding: '0.5rem' }}>
+          Todos los derechos reservados © 2023
+        </span>
+      </div>
     </>
   )
 }
