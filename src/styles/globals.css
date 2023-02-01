@@ -34,3 +34,9 @@ p{
   margin: 0.5rem auto;
   padding: 0.5rem;
 }
+.copyrigth{ 
+    text-align: center; 
+    margin: 0.5rem 0; 
+    color: black;
+    font-weight: bold;
+}
