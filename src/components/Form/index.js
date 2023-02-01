@@ -15,6 +15,7 @@ export const Form = () => {
     }, 900)
   }
   const handleSubmit = async (e) => {
+    e.preventDefault()
     await saveData(mail)
     alert('registro exitoso')
   }
