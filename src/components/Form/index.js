@@ -11,35 +11,32 @@ export const Form = () => {
     if (debounceRef.current) clearTimeout(debounceRef.current)
 
     debounceRef.current = setTimeout(() => {
-      setMail({ name: e.target.value, email: e.target.value })
+      setMail({ email: e.target.value })
     }, 900)
   }
   const handleSubmit = async (e) => {
-    e.preventDefault()
     await saveData(mail)
+    alert('registro exitoso')
   }
 
   return (
     <>
+      <p style={{ color: 'white' }}>
+        Suscribete para obtener contenido exclusivo{' '}
+        <span className={'title'}>gratis</span>
+      </p>
       <FormSC>
         <form onSubmit={handleSubmit}>
           <div>
             <input
-              onChange={handleChange}
-              type='text'
-              placeholder='Nombre'
-              required={true}
-            />
-          </div>
-          <div>
-            <input
+              name='email'
               onChange={handleChange}
               type='email'
-              placeholder='Correo'
+              placeholder='Escribe tu correo Aquí'
               required={true}
             />
           </div>
-          <button type='submit'>Submit</button>
+          <button type='submit'>DA CLICK PARA SUSCRIBIRTE </button>
         </form>
       </FormSC>
     </>
