@@ -8,7 +8,7 @@ export const FooterSC = styled.footer`
   img {
     width: 50px;
     height: 50px;
-    filter: opacity(0.4);
+    filter: opacity(0.8);
     transition: 0.4s;
     :hover {
       transform: scale(1.2);

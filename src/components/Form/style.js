@@ -7,6 +7,9 @@ export const FormSC = styled.section`
     margin: 0 auto;
     /* border: 1px solid red; */
     width: 80%;
+    padding: 0.5rem;
+    box-shadow: 0px 0px 2px rgb(255, 255, 255, 0.7);
+    border-radius: 0.5rem;
     div {
       width: 100%;
       margin-top: 4px;
@@ -26,7 +29,7 @@ export const FormSC = styled.section`
     button {
       margin-top: 1rem;
       background: #ffbd2b;
-      width: 100%;
+      min-width: 100%;
       height: 50px;
       border-radius: 8px;
       font-size: 1rem;
@@ -35,6 +38,9 @@ export const FormSC = styled.section`
       cursor: pointer;
       :hover {
         transform: scale(1.1);
+        background: black;
+        border: 1px solid #ffbd2b;
+        color: white;
       }
     }
   }
