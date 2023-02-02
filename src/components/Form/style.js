@@ -17,7 +17,7 @@ export const FormSC = styled.section`
         width: 100%;
         height: 50px;
         border-radius: 5px;
-        padding-left: 2rem;
+        padding-left: 1rem;
 
         ::placeholder {
           font-size: 1rem;
