@@ -17,14 +17,14 @@ export const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     await saveData(mail)
-    alert('registro exitoso')
+    alert('Registro exitoso')
   }
 
   return (
     <>
-      <p style={{ color: 'white' }}>
+      <p style={{ color: 'white', marginBottom: '1rem' }}>
         Suscribete para obtener contenido exclusivo{' '}
-        <span className={'title'}>gratis</span>
+        <span className={'title'}>GRATIS</span>
       </p>
       <FormSC>
         <form onSubmit={handleSubmit}>

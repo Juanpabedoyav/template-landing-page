@@ -7,7 +7,7 @@ import Link from 'next/link'
 export const Footer = () => {
   return (
     <>
-      <p style={{ color: 'white' }}>
+      <p style={{ color: 'white', marginBottom: '0px' }}>
         Siguenos en :
         <span className={'title title-footer'}>@lodeberiasaber</span>
       </p>
