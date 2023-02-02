@@ -3,7 +3,7 @@ import { saveData } from '../../helpers/saveData'
 import { addDoc, collection } from 'firebase/firestore'
 import { db } from '../../firebase/config'
 import { FormSC } from './style'
-export const Form = () => {
+export const Form = ({ text, action }) => {
   const [mail, setMail] = useState({})
   const debounceRef = useRef()
 
@@ -23,8 +23,7 @@ export const Form = () => {
   return (
     <>
       <p style={{ color: 'white', marginBottom: '1rem' }}>
-        Suscribete para obtener contenido exclusivo{' '}
-        <span className={'title'}>GRATIS</span>
+        {text} <span className={'title'}>GRATIS</span>
       </p>
       <FormSC>
         <form onSubmit={handleSubmit}>
@@ -37,7 +36,7 @@ export const Form = () => {
               required={true}
             />
           </div>
-          <button type='submit'>DA CLICK PARA SUSCRIBIRTE </button>
+          <button type='submit'>DA CLICK PARA {action} </button>
         </form>
       </FormSC>
     </>

@@ -8,7 +8,10 @@ export const Main = () => {
     <>
       <Header />
       <Banner />
-      <Form />
+      <Form
+        text={'Suscribete para obtener contenido exclusivo'}
+        action={'SUSCRIBIRTE'}
+      />
       <Footer />
     </>
   )

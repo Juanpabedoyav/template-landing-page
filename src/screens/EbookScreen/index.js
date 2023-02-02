@@ -6,7 +6,7 @@ export const EbookScreen = () => {
   return (
     <>
       <Header />
-      <Form />
+      <Form text={'Descarga el E-book'} action={'DESCARGAR'} />
       <Footer />
     </>
   )
