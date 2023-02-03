@@ -10,7 +10,7 @@ export const Main = () => {
       <Banner />
       <Form
         text={'Suscribete para obtener contenido exclusivo'}
-        action={'SUSCRIBIRTE'}
+        textButton={'SUSCRIBIRTE'}
       />
       <Footer />
     </>
