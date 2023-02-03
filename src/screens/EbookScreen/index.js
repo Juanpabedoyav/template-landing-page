@@ -1,12 +1,13 @@
-import { Banner } from '../../components/Banner'
 import { Footer } from '../../components/Footer'
 import { Header } from '../../components/Header'
 import { Form } from '../../components/Form'
+import { PortadaEbook } from '../../components/PortadaEbook'
 export const EbookScreen = () => {
   return (
     <>
       <Header />
-      <Form text={'Descarga el E-book'} action={'DESCARGAR'} />
+      <PortadaEbook />
+      <Form text={'Descarga el E-book'} textButton={'DESCARGAR'} />
       <Footer />
     </>
   )

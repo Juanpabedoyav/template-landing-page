@@ -3,7 +3,7 @@ import { saveData } from '../../helpers/saveData'
 import { addDoc, collection } from 'firebase/firestore'
 import { db } from '../../firebase/config'
 import { FormSC } from './style'
-export const Form = ({ text, action }) => {
+export const Form = ({ text, textButton }) => {
   const [mail, setMail] = useState({})
   const debounceRef = useRef()
 
@@ -36,7 +36,7 @@ export const Form = ({ text, action }) => {
               required={true}
             />
           </div>
-          <button type='submit'>DA CLICK PARA {action} </button>
+          <button type='submit'>DA CLICK PARA {textButton} </button>
         </form>
       </FormSC>
     </>
