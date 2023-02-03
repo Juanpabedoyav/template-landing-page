@@ -6,26 +6,37 @@ import grow from '../../../public/assets/middle/1.png'
 import engrane from '../../../public/assets/middle/2.png'
 import money from '../../../public/assets/middle/3.png'
 import { BannerSC, ImageBannerSC, MiddleSC } from './styles'
+import Link from 'next/link'
 
-const banners = [banner1, banner2]
+const banners1 = [banner2]
 
 export const Banner = () => {
   return (
     <>
-      <p style={{ color: 'white' }}>
-        <span className={'title'}>Lo Deberías Saber</span>
+      <p style={{ color: 'white', width: '80%', textAlign: 'center' }}>
+        <span className={'title'}>Lo Deberías Saber</span> Aquí encontrarás
+        información valiosa y <span className={'title'}>estrategias</span> para
+        mejorar tus finanzas. Comencemos juntos el camino hacia un{' '}
+        <span className={'title'}>futuro financiero más brillante</span>
+      </p>
+      <p style={{ color: 'white', width: '80%' }}>
+        ¡Explora nuestro contenido para
+        <span className={'title'}>descubrir más!</span>
       </p>
 
-      <p style={{ color: 'white' }}>Exclusivo en: </p>
-      {banners.map((banner, i) => (
-        <BannerSC key={i}>
+      <BannerSC>
+        <Link href={'/ebook'}>
           <ImageBannerSC
-            src={banner}
-            alt='Nuevo video todos los viernes'
+            src={banner1}
+            alt='Descarga E-book gratis'
             priority={''}
           />
-        </BannerSC>
-      ))}
+        </Link>
+        <Link href={'/'}>
+          <ImageBannerSC src={banner2} alt='Curso apuestas' priority={''} />
+        </Link>
+      </BannerSC>
+
       <p style={{ color: 'white' }}>
         Con la ayuda de <span className={'title'}>Lo Deberías Saber </span>
         aprenderas A:
