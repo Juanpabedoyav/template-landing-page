@@ -1,19 +1,17 @@
 import Image from 'next/image'
+import { CallAction } from '../CallAction'
 import banner1 from '../../../public/assets/banners/1.png'
 import banner2 from '../../../public/assets/banners/2.png'
-import banner3 from '../../../public/assets/banners/3.png'
 import grow from '../../../public/assets/middle/1.png'
 import engrane from '../../../public/assets/middle/2.png'
 import money from '../../../public/assets/middle/3.png'
 import { BannerSC, ImageBannerSC, MiddleSC } from './styles'
 import Link from 'next/link'
 
-const banners1 = [banner2]
-
 export const Banner = () => {
   return (
     <>
-      <p style={{ color: 'white', width: '80%', textAlign: 'center' }}>
+      <p style={{ color: 'white', width: '90%', textAlign: 'start' }}>
         <span className={'title'}>Lo Deberías Saber</span> Aquí encontrarás
         información valiosa y <span className={'title'}>estrategias</span> para
         mejorar tus finanzas. Comencemos juntos el camino hacia un{' '}
@@ -23,6 +21,7 @@ export const Banner = () => {
         ¡Explora nuestro contenido para
         <span className={'title'}>descubrir más!</span>
       </p>
+      <CallAction time={100000} />
 
       <BannerSC>
         <Link href={'https://hotm.art/uS5aS4N'}>
