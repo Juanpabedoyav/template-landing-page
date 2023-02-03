@@ -13,7 +13,7 @@ const banners1 = [banner2]
 export const Banner = () => {
   return (
     <>
-      <p style={{ color: 'white', width: '80%' }}>
+      <p style={{ color: 'white', width: '80%', textAlign: 'center' }}>
         <span className={'title'}>Lo Deberías Saber</span> Aquí encontrarás
         información valiosa y <span className={'title'}>estrategias</span> para
         mejorar tus finanzas. Comencemos juntos el camino hacia un{' '}
