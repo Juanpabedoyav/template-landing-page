@@ -25,15 +25,15 @@ export const Banner = () => {
       </p>
 
       <BannerSC>
-        <Link href={'/ebook'}>
+        <Link href={'https://hotm.art/uS5aS4N'}>
           <ImageBannerSC
-            src={banner1}
+            src={banner2}
             alt='Descarga E-book gratis'
             priority={''}
           />
         </Link>
-        <Link href={'/'}>
-          <ImageBannerSC src={banner2} alt='Curso apuestas' priority={''} />
+        <Link href={'/ebook'}>
+          <ImageBannerSC src={banner1} alt='Curso apuestas' priority={''} />
         </Link>
       </BannerSC>
 
